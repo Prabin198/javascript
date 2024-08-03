@@ -11,3 +11,7 @@ function addArray(num1,num2){
     return num1.concat(num2);
 }
 console.log(addArray([1,2,3,4],[5,6,7,8]))
+function add(...num){
+    return num[3];
+}
+console.log(add(1,2,3,4,5,6))
