@@ -12,3 +12,4 @@ const newdata = [1,2,[3,4],[5,[6,7]]];
 console.log(newdata.flat(Infinity));//it remove all the braces inside the main array
 console.log(Array.isArray(0));//it check whether the given element is in defined array or not.
 console.log(Array.from("prabin"))//it will give output in array
+console.log(Array.of("prabin"))
