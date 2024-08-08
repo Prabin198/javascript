@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learning</title>
+<style>
+    .style{
+        background-color: black;
+        color:white;
+    }
+</style>
+</head>
+<body class="style">
+    <h1 id="heading" class="hero">Dom parctice.</h1>
+    <p>Lorem ipsum dolor sit.</p>
+    <h2>hello</h2>
+    <h2>namaste</h2>
+    <h2>ohaiiioo</h2>
+    <input type="text" class="password" placeholder="write">
+    <ol>
+        <li class="list">one</li>
+        <li class="list">two</li>
+        <li class="list">three</li>
+    </ol>
+</body>
+</html>
+<!--
+console.log(window.document)//at first we search window.document to get our html doc
+after that we can directly use document.getElementById("idname")//using this we get the element of the required idname.
+to change simply we can create const element=document.getElementById("idname") then  
+using element.textContent//if there we hide content using css attributes it shows that too.
+we also have
+element.innerText //only those content in display lai select garxa
+ if we have like this <h1>
+    <h1></h1>
+</h1> the it will give innner h1 too in output.
+to change the content we can simply do 
+element.textContent="<h1>what you want to write</h1>"
+*/-->
+
+<!--similarly we have document.querySelector("tag name") it will select the top if there is same tag many.
+using selector used in css like#id,.class 
+document.querySelectorAll("tag") sabai select garxa 
+yesle chai datatype like HTML collection, node list return garxa means it is just like array but we cannot define it as array fully because it has limited prototype than array.
+node list mah loop lagaunu milxa tara arko mah mildaina
+console->
+const doc=document.querySelectorAll("li")
+undefined
+doc
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeList
+doc[0].style.backgroundColor="red"
+'red'
+doc[2].style.textDecoration="underline"
+'underline'
+to convert Htmlcollection into array first declare const arr=document.querySelectorAll("li");
+ const hero=Array.from(arr);
+ it will be changed to array and we can manipulate array using map filter foreach etc.
+-->
