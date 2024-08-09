@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<body style="background-color: black; color:white;">
+    <div id="myId"><h2>oii zoro</h2></div>
+    <span>
+        <ul class="WHY">
+            <li class="list">ZORO</li>
+            <li class="list">LUFFY</li>
+            <li class="list">SANJI</li>
+            <li class="list">TONY TONY</li>
+            <li class="list">USSOP</li>
+            <li class="list">FRANKINOSUKE</li>
+
+        </ul>
+    </span>
+</body>
+<script>
+    // const doc= document.getElementById("myId")
+    //  doc.textContent='konichuwwa'
+    //  doc.innerHTML='<h2>yokaijaku</h2>'
+
+    
+// console.log(doc.textContent);
+// doc.style.backgroundColor='magenta';
+// doc.style.opacity='0.4';
+const unorder=document.querySelectorAll('.list');
+ const dost =Array.from(unorder);
+console.log(dost);
+unorder[0].style.backgroundColor="red";
+unorder.forEach((val)=>{
+    if(val==unorder[0]){
+   const yess=val.style.fontWeight="bolder"
+    }
+})
+const hiralal=document.createElement("div");
+console.log(hiralal)
+const yara=document.createTextNode('chya khana pauda');
+hiralal.appendChild(yara);
+hiralal.style.backgroundColor="rgba(200,200,33,0.75)"
+document.body.appendChild(hiralal);
+hiralal.style.textAlign="center"
+
+ </script>
+</html>
