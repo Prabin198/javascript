@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="join">
+       <li>NEPALI</li>
+    </ul>
+</body>
+<script>
+function addlang(lang){
+    const doc=document.createElement('li');
+   const java= document.createTextNode(`${lang}`);
+   doc.appendChild(java)
+   const select=document.querySelector(".join")
+   select.appendChild(doc);
+
+    
+}
+
+addlang("physics")
+addlang("nepali")
+function addlanguage(langs){
+    const li=document.createElement('li');
+    li.appendChild(document.createTextNode(langs))
+    document.querySelector('.join').appendChild(li)
+}
+addlanguage("maths");
+const secondlang=document.querySelector("li:nth-child(2)");
+const news= document.createTextNode("lund");
+secondlang.replaceWith(news)
+const removes=document.querySelector("li:last-child")
+removes.remove();//it will remove content
+
+</script>
+</html>
