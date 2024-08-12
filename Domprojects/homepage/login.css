@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://images.unsplash.com/photo-1613668145044-e9abd379c1a8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+
+}
+.container{
+  
+    width: 420px;
+    color: #ffffff;
+    padding:30px 40px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255,0.2);
+    backdrop-filter:blur(18px);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.container h1{
+    font-size: 36px;
+    text-align: center;
+}
+.container .user{
+    position: relative;
+width:100%;
+height:50px;
+margin:30px 0;
+
+}
+.user input{
+    width: 100%;
+    height: 100%;
+   
+    background: transparent;
+    border:none;
+    outline:none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 20px 45px 20px 20px;
+
+}
+.user input::placeholder{
+ color:#ffffff;
+}
+.user i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translatey(-50%);
+    font-size: 20px;
+}
+.container .forget{
+    display: inline;
+    display:flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px ;
+
+}
+.forget a{
+    text-decoration: none;
+    padding-right: 10px;
+    color: #fff;
+
+}
+.forget label {
+    padding-left: 5px;
+}
+.forget label input{
+    accent-color: #ffff;
+
+}
+.container .login{
+ height: 50px;
+}
+.login button{
+    height: 45px;
+    width: 100%;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background:transparent;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color:#000000;
+    font-weight: 700;
+}
+.forget a:hover{
+    text-decoration: underline;
+}
+.container .register p{
+  text-align: center;
+  margin: 20px;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+.register a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+.register a:hover{
+    text-decoration: underline;
+}

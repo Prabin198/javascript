@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0;
+
+}
+#Body{
+    height: 100vh;
+   
+}
+body .home{
+    height: 70px;
+    width: 100%;
+    background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.home .nav{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkblue; 
+    
+    
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    height: 35px;
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 550;
+    border-radius: 8px;
+
+
+}
+.main{
+    height: 41.61rem;
+    width: 100%;
+    background-color: rgb(231, 219, 219);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main .name{
+    height: 70px;
+    width: 200px;
+    font-size:x-large;
+    font-weight: bolder;
+    text-align: center;
+}
+.main .white{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(181, 181, 181);
+    border: 2px solid rgb(11, 0, 0);
+}
+.main .blue{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 0, 255);
+    border: 2px solid rgb(11, 0, 0);
+}
+.main .red{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(11, 0, 0);
+}
+.green{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 255, 42);
+    border: 2px solid rgb(11, 0, 0);
+}
+.main .box{
+    display: flex;
+    gap: 20px;
+
+}
+.footer{
+    height: 9%;
+    width: 100%;
+    background-color: black;
+}
+.main .comment{
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-weight: 550;
+}
