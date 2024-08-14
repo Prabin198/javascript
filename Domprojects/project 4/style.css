@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.body{
+    height: 100vh;
+    width: 100%;
+    background-color: #e89191;
+    
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    background-color:rgb(0, 0, 0);
+    height: 50px;
+}
+.main{
+    height: 80vh;
+  background-image: conic-gradient(
+    rgb(87, 84, 253) 130deg,transparent 320deg
+  );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.result{
+    height:90px ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.result p{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .guesses{
+    height: 30px;
+    width: aut0;
+    background-color: rgb(248, 248, 248);
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  
+
+}
+.guesses:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(203, 14, 20);
+}
+.lastResult{
+    height: 30px;
+    width: 135px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lastResult:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(203, 14, 20);
+}
+.foot{
+    height: 83px;
+    width: 100%;
+    background: linear-gradient(to right, #e1eec3, #f05053);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.form div{
+    font-size: larger;
+    font-weight: 550;
+
+}
+.form div .guessField{
+    height: 30px;
+    width: auto;
+    border-radius: 6px;
+    padding-left:8px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form  .guessSubmit{
+    height: 30px;
+    width: 140px;
+    border-radius: 8px;
+
+
+}
+.guessField:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(203, 14, 20);
+}
+.guessSubmit:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(203, 14, 20);
+}

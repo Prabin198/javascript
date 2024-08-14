@@ -6,7 +6,7 @@
 .body{
     height: 100vh;
     width: 100%;
-    background-color: gray;
+    background-color: rgb(135, 24, 247);
     
 }
 .nav{
@@ -29,7 +29,9 @@
 }
 .main{
     height: 80vh;
-    background-color: ghostwhite;
+    background-image: conic-gradient(
+        rgb(109, 16, 89) 130deg,transparent 320deg
+      );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +42,7 @@
 .foot{
     height: 83px;
     width: 100%;
-    background-color: aqua;
+    background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +58,7 @@
 }
 .main .time{
     height: 30px;
-    width: 90px;
+    width: 100px;
     background-color: orange;
     border-radius: 4px;
     padding-left: 6px;
