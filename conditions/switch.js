@@ -24,6 +24,6 @@ switch (week) {
             break;
 
     default:
-        console.log('not in week')
+        console.log('not in damn week')
         break;
 }
