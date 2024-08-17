@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+</head>
+<body>
+    <h2>HanumanKind</h2>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+    <script>
+        const SayDate=function(go){
+            console.log('dingdong',Date.now());
+            console.log(go)
+        }
+        const intId=setInterval(SayDate,1000,'intro')
+        clearInterval(intId)
+    </script>
+</body>
+</html>
