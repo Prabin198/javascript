@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body class="body" style="background-color: rgb(208, 175, 175);">
+    <div>
+        <ul class="photo">
+            <li><img height="150px" id="water" src="https://images.unsplash.com/photo-1705838942238-f5548a29bd3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BsYXNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D" alt="photo" ></li>
+            <li><img height="150px" width="200px" id="color" src="https://media.istockphoto.com/id/934043364/photo/blue-color-powder-explosion-cloud-isolated-on-white-background-closeup-of-blue-dust-particles.webp?b=1&s=612x612&w=0&k=20&c=po3QuQYPT2G-OPipY7UBe8n4v7ZRcoMeLJMSZDaouSE=" alt="color">
+            </li>
+            <li><a id="fb" href="https://www.facebook.com">Facebook</a></li>
+        </ul>
+    </div>
+    <SCript>
+        // document.querySelector('.photo').addEventListener('click',function(e){
+        //     let removeIt=e.target.parentNode;
+
+        //     removeIt.remove();
+        // //   removeIt.parentNode.removeChild(removeIt);
+        // })
+        // document.querySelector('#fb').addEventListener('click',function(e){
+        //     e.preventDefault();
+        // })
+        document.querySelector('.photo').addEventListener('click',function(e){
+            console.log(e.target.tagName);
+            let res=e.target.parentNode;
+            if(e.target.tagName === 'IMG'){
+            
+                res.remove();
+            }
+            else{
+               res.parentNode.removeChild(res)
+            }
+        })
+             
+        
+    </SCript> 
+</body>
+</html>

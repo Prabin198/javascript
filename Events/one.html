@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Events</title>
 </head>
-<body>
-    
+<body class="body" style="background-color: rgb(208, 175, 175);">
+    <div>
+        <ul class="photo">
+            <li><img height="150px" id="water" src="https://images.unsplash.com/photo-1705838942238-f5548a29bd3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BsYXNoJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D" alt="photo" ></li>
+            <li><img height="150px" width="200px" id="color" src="https://media.istockphoto.com/id/934043364/photo/blue-color-powder-explosion-cloud-isolated-on-white-background-closeup-of-blue-dust-particles.webp?b=1&s=612x612&w=0&k=20&c=po3QuQYPT2G-OPipY7UBe8n4v7ZRcoMeLJMSZDaouSE=" alt="color">
+            </li>
+            <li><a id="fb" href="https://www.facebook.com">Facebook</a></li>
+        </ul>
+    </div>
+    <SCript>
+        //type,timestamp,defaultPrevented
+        //target,toElement,srcElement,currentTarget
+        //clientX,clientY,screenX,screenY
+        //altkey,ctrlkey,shiftey,keycode
+//  document.getElementById('water').onclick= function(){
+//     alert('photo clicked again')
+//  }
+const body=document.querySelector(".body");
+// document.querySelector('#water').addEventListener("click",function(){
+//     // body.style.backgroundColor='red';
+//     alert('again clicking using eventlistner')
+   
+// },false)
+document.querySelector('#water').addEventListener("click",function(e){
+    // body.style.backgroundColor='red';
+    console.log('glass cliclked')
+    e.stopPropagation()//yo use garepaxi bubbling huddaina yei matra execute hunxa
+
+   
+})
+document.querySelector('.photo').addEventListener("click",function(e){
+    // body.style.backgroundColor='red';
+    console.log('ul clicked')
+   
+})
+// if third parameter is false:it is called bubbling method or event propagation where the inside element is first executed then only global element executed.
+//if third params is true :top to bottom will follow capturing method
+//attachEvent previously used
+//jQuery -onEventListner
+document.querySelector('#fb').addEventListener("click",function(e){
+    // body.style.backgroundColor='red';
+    e.preventDefault()
+})
+    </SCript>
 </body>
 </html>
+<!-- onclick="alert('unsplashed photo')"-->
