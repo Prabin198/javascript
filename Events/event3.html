@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Js</title>
+</head>
+<body>
+    <h2>LIFE SUCKS !!</h2>
+    <button class="start">Start</button>
+    <BUTTON class="STOP">Stop</BUTTON>
+    <div class="wow" style="background-color: rgb(227, 227, 227); height: 100px;"></div>
+    <script>
+        const head=document.querySelector('h2');
+        const div=document.querySelector('.wow')
+          document.querySelector('.start').addEventListener('click',function(){
+            const read=   setTimeout(function(){
+            head.innerHTML='Hare Krishna';
+
+
+           },3000)})
+           document.querySelector('.STOP').addEventListener('click',function(){
+            // clearTimeout(read);
+            setTimeout(function(){
+                const hello=  document.createElement('div')
+          console.log(hello)
+           const text =document.createTextNode('chin tapak dum dum');
+           const kto=hello.appendChild(text);
+           
+              div.appendChild(kto)
+            },2000)
+           })
+
+           
+        
+        
+ 
+    </script>
+</body>
+</html>

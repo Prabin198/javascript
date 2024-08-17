@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Js</title>
+</head>
+<body>
+    <h2>LIFE SUCKS !!</h2>
+    <BUTTON class="STOP">Stop</BUTTON>
+    <script>
+        // setTimeout(function(){
+        //     console.log('prabin karki')
+        // },2000)
+        // const func=function(){
+        //     console.log('Holy Cow');
+        // }
+        // setTimeout(func
+            
+        // , 2000);
+
+        const data=function(){
+            document.querySelector('h2').innerHTML="Holy Cow!!"
+        }
+         const goOut=setTimeout(data,2000);
+ const button =document.querySelector('BUTTON').addEventListener('click',function(e){
+      clearTimeout(goOut)
+      console.log('stopped');
+ })
+ 
+    </script>
+</body>
+</html>
