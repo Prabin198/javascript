@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+       <div></div>
+           <img src="" alt="photos">
+           <h1 id='one'></h1>
+           <p></p>
+    </div>
+</body>
+<script>
+    const xhr=new XMLHttpRequest();
+    const url='https://api.github.com/users/prabin198';
+    const img=document.querySelector('img');
+    const id=document.querySelector('#one');
+    const follower=document.querySelector('p')
+    xhr.open('GET',url);
+    xhr.onreadystatechange=function(e){
+          const yes= xhr.readyState
+           if(yes === 4 && xhr.status ===200){
+            console.log(this.responseText);
+            const no=JSON.parse(this.responseText);
+            
+            img.setAttribute('src',`${no.avatar_url}`)
+            id.innerHTML=`Login username:${no.login},id:${no.id}`
+            follower.innerHTML=`Follower:${no.followers},Following:${no.following}`
+           }
+    }
+    xhr.send()
+</script>
+</html>

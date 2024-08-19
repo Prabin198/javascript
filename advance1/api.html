@@ -20,16 +20,18 @@
     const url='https://api.github.com/users/prabin198';
     const xhr= new XMLHttpRequest();
     xhr.open('GET',url);
-
-    xhr.onreadystatechange= function(){
+    
+    xhr.onreadystatechange= function(e){
         console.log(xhr.readyState)
         if(xhr.readyState === 4){
             console.log(this.responseText)
-          const hell=  JSON.parse( this.responseText);
+            const hell=  JSON.parse( this.responseText);
             console.log(hell.following)
-            console.log(hell.login)
+          const  hero =console.log(hell.login);
         }
     }
     xhr.send();
+
+
 </script>
 </html>
