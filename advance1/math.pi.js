@@ -22,11 +22,22 @@ console.log(myObj.greet())
 
 const User={
     name:'prabin',
-    email:'prabin@fb.com'
+    email:'prabin@fb.com',
+    getData:function(){
+        console.log('no chya');
+    }
 }
 Object.defineProperty(User,'name',{
     writable:false,
-    enumerable:false
+    enumerable:false,
+    configurable:false,
+
 })
 const descript=Object.getOwnPropertyDescriptor(User,"name");
 console.log(descript);
+for (const [key,value] of Object.entries(User)) {
+    if (typeof value !== 'function') {
+        console.log(`${key}:${value}`)
+    }
+
+}

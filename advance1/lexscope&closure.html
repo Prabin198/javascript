@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: black;">
+    <button id="green">Green</button>
+    <button id="blue">Blue</button>
+</body>
+<script>
+    function User(){
+        let name='prabin';
+        function displayName(){
+            console.log(name);
+        }
+        displayName();
+    }
+    User();//lexical scope it means inner block has the access of outer block but outerblock cannot access inner block;
+    function User1(){
+        const name='javascript';
+        function displayName(){
+            const raju='name';
+            console.log(raju);
+            console.log(name);
+        }
+        return displayName;
+    }
+    const Checker=new User1()
+    Checker();
+</script>
+<script>
+function Color(color){
+    //    document.body.style.backgroundColor=`${color}`yo use garda problem auxa so closure ko meaning ya clear hunxa
+    return function(){
+         document.body.style.backgroundColor=`${color}`
+    }
+}
+document.querySelector('#green').onclick =Color('green');
+document.querySelector('#blue').onclick =Color('blue');
+
+</script>
+</html>
