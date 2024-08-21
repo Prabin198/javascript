@@ -1,1 +1,1 @@
-const userTwo=User('ram',10);
+userDetail.createId();

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind</title>
+</head>
+<body>
+    <button>Click Me !!</button>
+</body>
+<script>
+    class React{
+        constructor() {
+            this.username='prabin';
+            this.server='https://bind.html/prabin/3000';
+        
+       //requirement
+       
+       const button =document.querySelector('button');
+
+       button.addEventListener("click",this.handleMe.bind(this))
+        }
+
+        handleMe(){
+            console.log('button clicked')
+            console.log(`the username is${this.username} and is server is ${this.server}`);
+        }
+    }
+    new React();
+</script>
+</html>
