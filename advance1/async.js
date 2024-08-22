@@ -1,5 +1,5 @@
 const promiseSix = new Promise(function(resolve,reject){
-    let error = false;
+    let error = true;
     if(!error){
     setTimeout(function(){
         resolve({
@@ -14,10 +14,35 @@ const promiseSix = new Promise(function(resolve,reject){
 async function consumeData(){
      try {
         const response=await promiseSix;
-        console.log(response);
+        console.log(response.username);
      } catch (error) {
         console.log(error)
      }
 }
 
 consumeData();
+const prom= new Promise(function(resolve,reject){
+    let error=true;
+    if(!error){
+        setTimeout (function(){
+      resolve({
+        username:'ram',
+        email:'ram@.com.ai'
+      })
+        },1000)
+        
+    }
+    else{
+        reject(`The error occured`);
+    }
+})
+async function user() {
+    try{
+    const resolve=await prom ;
+    console.log(`The user is ${resolve.username} and email is ${resolve.email}`)
+    }
+    catch(error){
+        console.log(error)
+    }
+}
+user();
