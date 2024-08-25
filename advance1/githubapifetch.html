@@ -29,7 +29,9 @@
             
             img.setAttribute('src',`${no.avatar_url}`)
             id.innerHTML=`Login username:${no.login},id:${no.id}`
-            follower.innerHTML=`Follower:${no.followers},Following:${no.following}`
+            follower.innerHTML=`Follower:${no.followers},Following:${no.following},Name:${no.name}.....repo count:${no.public_repos
+            }`
+
            }
     }
     xhr.send()

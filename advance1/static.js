@@ -10,6 +10,6 @@ class User{
     
 }
 const userDetail = new User('prabin');
-// userDetail.createId();
+//userDetail.createId();
 User.createId(userDetail.username);
 console.log(userDetail)
