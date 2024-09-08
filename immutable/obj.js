@@ -9,3 +9,11 @@ const Obj={name:{
 }};
 const{second}=Obj.name.facebook
 console.log(second);
+
+const arr=[12,function()
+{
+console.log('hello world');
+},24,12];
+const [first,secc,,fourth]=arr;//destructuring tya comma ,, garda skip hunxa bich ko index.
+console.log(secc());
+console.log(fourth)
